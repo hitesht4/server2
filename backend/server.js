@@ -9,7 +9,7 @@ const connectDB = require("./config/db");
 connectDB();
 const app = express();
 
-app.get("/", (req, res) => {
+app.get("/check", (req, res) => {
   res.send("Welcome to api");
 });
 app.use(express.json());
